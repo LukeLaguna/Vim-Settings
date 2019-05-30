@@ -1,0 +1,88 @@
+			Vim Quick Reference Guide
+Vim Advantages
+- Installed on every linux machine, free, customizable & fast
+- Doesn't require a GUI to use
+- Very good at opening GIGANTIC txt files multiple gigabytes long,
+these same files would take IDJs very long time to load.
+
+There are 3 different modes on VIm
+1. Escape Mode(esc) 2. Insert Mode (a) 3. Visual Mode (v)
+=====================================================================
+                      Moving Around
+k - up
+j - down
+l - right
+h - left
+
+Crtl + e - srcoll down
+Crtl + y - scoll up
+Crtl + u - jump up
+Crtl + d - jump down
+
+0 - jump to begining of a line
+$ - end of a line
+b/e - jump to the begin/end of the current word.
+gg - top of file
+G - bottom of file
+: + # - takes you to that line in the file
+=====================================================================
+                      Edit/Search
+
+I - insert at the beginning
+A - append to end
+o/O -  open a new line after/before the current line.
+r - replace one character
+~ - changes case
+R - replace text
+C - change remaining part of line.
+
+y - yank(copy)
+p - paste
+u - undo
+Ctrl + r - redo
+dd - delate a line/cut (places line in a buffer)
+
+:q(quit)
+:w(save)
+:wq(save & write)
+:q!(quit without saving)
+
+/ - search for first occurence of a word
+? - search for last occurence of a word
+* - search for all occurences of word under the cursor
+Ctrl + n - removes all hightlights from a search
+:%s/first/second - Find & Replace all
+:%s/first/second/c - prompt me each time if I want to replace
+:vsplit + file.txt - Vertically Splits your screen
+===============================================================
+                Python Exclusive Vim Notes
+
+F - Shows/Hides all classes/functions
+, s - Alphabetically sort imports (in visual mode)
+. - repeat last command
+J - joins two lines
+Ctrl+A / Ctrl+X - increments/decrements a number.
+> - indent block (in visual mode)
+< - unindent block (in visual mode)
+f2 - paste copied Python code maintaining correct format
+Crtl + nn - Hides/Shows all numbered lines for effective copying of code
+:!python test.py - runs your Python script in Terminal
+:!ls - execute any Bash command in Terminal
+
+================================================================
+                Nerd Tree Vim Notes
+
+Ctrl + h/j/k/l - Switch between multiple windows left/up/down/right respectively
+m - Opens Nerd Tree menu
+I - Shows all hidden directories in Nerd Tree
+s - (split) opens another file with a vertically split screen
+i - (split) opens another file with a horizontally split screen
+t - (tab) opens another file with a tabular window
+, n - Go backwards one tab
+, m - Go forwards one tab
+, t - Hide/Show Nerd Tree
+, r - Refresh the Nerd Tree
+, e - Quit current window
+, E - Quit all open windows
+Crtl + z - Save current window
+Crtl + p - Search for any file in cwd
